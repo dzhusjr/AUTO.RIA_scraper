@@ -9,7 +9,7 @@ import dotenv
 
 dotenv.load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHANNEL_ID = "@testforvacancy"
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 SCHEDULE = 10 # minutes
 
 bot = telebot.TeleBot(BOT_TOKEN)
